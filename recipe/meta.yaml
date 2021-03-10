@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.0.12" %}
+{% set version = "0.0.13" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: bf5cd9f63128136373cc8623f5677b933b084b459dc83f73aed3861e7ecfae0c
+  sha256: 72166ee9da27bfbdd4d67b3dc804d0c7e6a5245e4077a530d0374252466b19fe
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
