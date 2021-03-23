@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.0.13" %}
+{% set version = "0.0.14" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 72166ee9da27bfbdd4d67b3dc804d0c7e6a5245e4077a530d0374252466b19fe
+  sha256: 03b8397cea9e3df0687257b417c4f458480d7d8e4f953ce627ea507ebc0eb9f8
 
 build:
   number: 0
-  skip: true  # [py<36]
+  skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytask = _pytask.cli:cli
@@ -30,6 +30,7 @@ requirements:
     - pluggy
     - pony >=0.7.13
     - python
+    - rich
 
 test:
   requires:
