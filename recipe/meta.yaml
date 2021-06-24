@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
   run:
     - attrs >=17.4.0
-    - click
+    - click <8
     - click-default-group
     - colorama  # [win]
     - networkx >=2.4
