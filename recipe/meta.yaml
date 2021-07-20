@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.0.16" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 242bbd4ad8a64481abf6fe8edce8374bf23d49d1b328429c89da63c68e983c89
+  sha256: 489ed4314ff9b8c4df693c352ad76f99b70030f1b484c86b99fb53b94c2090d4
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
   run:
     - attrs >=17.4.0
-    - click <8
+    - click
     - click-default-group
     - colorama  # [win]
     - networkx >=2.4
