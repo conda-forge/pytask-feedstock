@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 090d466a7e6347e770b3a811b64b82995c22e6aa405fc3ebe231f242bad2aa9b
+  sha256: 7e55faf6f507d094232ea384281db874d7f34d5f79bc4b595c89850fbf097b8c
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - click-default-group
     - colorama  # [win]
     - networkx >=2.4
+    - packaging
     - pluggy
     - pony >=0.7.13
     - python
