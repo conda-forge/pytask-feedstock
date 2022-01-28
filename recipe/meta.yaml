@@ -23,14 +23,13 @@ requirements:
     - python
     - setuptools-scm
   run:
-    - attrs >=17.4.0
+    - attrs >=19.2.0
     - click
     - click-default-group
-    - colorama  # [win]
     - networkx >=2.4
     - packaging
     - pluggy
-    - pony >=0.7.13
+    - pony >=0.7.15
     - python
     - rich
 
