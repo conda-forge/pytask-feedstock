@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytask = _pytask.cli:cli
@@ -33,6 +33,7 @@ requirements:
     - pony >=0.7.15
     - python >=3.7
     - rich
+    - typing-extensions
 
 test:
   requires:
