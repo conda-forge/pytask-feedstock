@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.1.9" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 6f36564af275a6af46a7d62e7efeba8757504f7dd469457c835749f983a84a28
+  sha256: e32a707910d4a0bd19928852968b50e3c7d78313d816d53551c338657debd208
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytask = _pytask.cli:cli
