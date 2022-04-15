@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.1.9" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 6f36564af275a6af46a7d62e7efeba8757504f7dd469457c835749f983a84a28
+  sha256: e32a707910d4a0bd19928852968b50e3c7d78313d816d53551c338657debd208
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - pytask = _pytask.cli:cli
@@ -31,9 +31,11 @@ requirements:
     - packaging
     - pluggy
     - pony >=0.7.15
+    - pybaum
     - python >=3.7
     - rich
-    - typing-extensions
+    - tomli >=1.0.0
+    - tomli-w >=1.0.0
 
 test:
   requires:
@@ -54,11 +56,8 @@ about:
   home: https://github.com/pytask-dev/pytask
   license: MIT
   license_file: LICENSE
-  summary: In its highest aspirations, pytask tries to be pytest as a build system.
-  description: |
-    pytask’s main purpose is to facilitate reproducible research by automating workflows
-    in research projects.
-  doc_url: https://pytask-dev.readthedocs.io/en/latest
+  summary: pytask is a workflow management system which facilitates reproducible data analyses.
+  doc_url: https://pytask-dev.readthedocs.io/en/stable
   dev_url: https://github.com/pytask-dev/pytask/
 
 extra:
