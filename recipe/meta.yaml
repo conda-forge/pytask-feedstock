@@ -31,6 +31,7 @@ requirements:
     - packaging
     - pluggy
     - pony >=0.7.15
+    - pybaum
     - python >=3.7
     - rich
     - tomli >=1.0.0
