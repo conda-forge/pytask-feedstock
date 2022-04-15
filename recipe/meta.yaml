@@ -33,7 +33,8 @@ requirements:
     - pony >=0.7.15
     - python >=3.7
     - rich
-    - typing-extensions
+    - tomli >=1.0.0
+    - tomli-w >=1.0.0
 
 test:
   requires:
@@ -54,11 +55,8 @@ about:
   home: https://github.com/pytask-dev/pytask
   license: MIT
   license_file: LICENSE
-  summary: In its highest aspirations, pytask tries to be pytest as a build system.
-  description: |
-    pytask’s main purpose is to facilitate reproducible research by automating workflows
-    in research projects.
-  doc_url: https://pytask-dev.readthedocs.io/en/latest
+  summary: pytask is a workflow management system which facilitates reproducible data analyses.
+  doc_url: https://pytask-dev.readthedocs.io/en/stable
   dev_url: https://github.com/pytask-dev/pytask/
 
 extra:
