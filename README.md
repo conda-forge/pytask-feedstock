@@ -7,15 +7,11 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytask-feedstock/blob/main/LICENSE.txt)
 
-Summary: In its highest aspirations, pytask tries to be pytest as a build system.
+Summary: pytask is a workflow management system which facilitates reproducible data analyses.
 
 Development: https://github.com/pytask-dev/pytask/
 
-Documentation: https://pytask-dev.readthedocs.io/en/latest
-
-pytask’s main purpose is to facilitate reproducible research by automating workflows
-in research projects.
-
+Documentation: https://pytask-dev.readthedocs.io/en/stable
 
 Current build status
 ====================
