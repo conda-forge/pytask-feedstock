@@ -48,7 +48,7 @@ test:
 
     - pytask --help
     - pytask --version
-    # - pytask clean
+    - pytask clean
     - pytask markers
     - pytask collect
 
