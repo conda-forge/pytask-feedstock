@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.2.6" %}
+{% set version = "0.2.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 77e18fc280354212bf4d32da9d69270471782a55c79772852f0a3a05958a5f59
+  sha256: 8ebf85440badac75ac60e2991e7b9832d6c33923d6dc105662241ff2fadfa472
 
 build:
   noarch: python
