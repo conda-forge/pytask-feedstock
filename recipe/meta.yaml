@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.2.7" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 8ebf85440badac75ac60e2991e7b9832d6c33923d6dc105662241ff2fadfa472
+  sha256: 61bb50865eed797a2fb4a8d9c5b6f28cce08aa5ee61187a53e20788478ef9af0
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
     - toml
   run:
-    - attrs >=19.2.0
+    - attrs >=21.3.0
     - click
     - click-default-group
     - networkx >=2.4
@@ -35,7 +35,6 @@ requirements:
     - python >=3.7
     - rich
     - tomli >=1.0.0
-    - tomli-w >=1.0.0
 
 test:
   requires:
@@ -48,9 +47,7 @@ test:
 
     - pytask --help
     - pytask --version
-    - pytask clean
     - pytask markers
-    - pytask collect
 
 about:
   home: https://github.com/pytask-dev/pytask
