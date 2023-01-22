@@ -24,7 +24,7 @@ requirements:
     - setuptools-scm
     - toml
   run:
-    - attrs >=19.2.0
+    - attrs >=21.3.0
     - click
     - click-default-group
     - networkx >=2.4
@@ -35,7 +35,6 @@ requirements:
     - python >=3.7
     - rich
     - tomli >=1.0.0
-    - tomli-w >=1.0.0
 
 test:
   requires:
@@ -48,9 +47,7 @@ test:
 
     - pytask --help
     - pytask --version
-    - pytask clean
     - pytask markers
-    - pytask collect
 
 about:
   home: https://github.com/pytask-dev/pytask
