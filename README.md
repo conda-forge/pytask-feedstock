@@ -1,11 +1,11 @@
-About pytask
-============
+About pytask-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytask-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytask-dev/pytask
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytask-feedstock/blob/main/LICENSE.txt)
 
 Summary: pytask is a workflow management system which facilitates reproducible data analyses.
 
