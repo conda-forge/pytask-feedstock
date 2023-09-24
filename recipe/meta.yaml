@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.3.2" %}
+{% set version = "0.4.0rc1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: bcc835f606e10860aa397940b4cf7c0a856732e95201a6a95d60e474a86dc1f1
+  sha256: 8e5082e908215fed3a9dba09f6779a587d35bd78e53bd49675a5400b1d9a3653
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
     - setuptools-scm
     - toml
   run:
@@ -28,13 +28,14 @@ requirements:
     - click
     - click-default-group
     - networkx >=2.4
+    - optree >=0.9
     - packaging
-    - pluggy
-    - pony >=0.7.15
-    - pybaum >=0.1.1
-    - python >=3.7
+    - pluggy >=1.0.0
+    - python >=3.8
     - rich
+    - sqlalchemy >=1.4.36
     - tomli >=1.0.0
+    - typing_extensions
 
 test:
   requires:
