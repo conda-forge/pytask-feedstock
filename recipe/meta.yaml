@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: bcc835f606e10860aa397940b4cf7c0a856732e95201a6a95d60e474a86dc1f1
+  sha256: 8e5082e908215fed3a9dba09f6779a587d35bd78e53bd49675a5400b1d9a3653
 
 build:
   noarch: python
