@@ -1,5 +1,5 @@
 {% set name = "pytask" %}
-{% set version = "0.4.0rc1" %}
+{% set version = "0.4.0rc2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: 8e5082e908215fed3a9dba09f6779a587d35bd78e53bd49675a5400b1d9a3653
+  sha256: 68e15f95bb69bc7b9602b2c245669f87ca1628337ae8b4bf4c5c88da07727e24
 
 build:
   noarch: python
@@ -48,7 +48,11 @@ test:
 
     - pytask --help
     - pytask --version
+    - pytask clean
+    - pytask collect
+    - pytask dag
     - pytask markers
+    - pytask profile
 
 about:
   home: https://github.com/pytask-dev/pytask
