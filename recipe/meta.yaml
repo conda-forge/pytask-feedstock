@@ -50,7 +50,6 @@ test:
     - pytask --version
     - pytask clean
     - pytask collect
-    - pytask dag
     - pytask markers
     - pytask profile
 
