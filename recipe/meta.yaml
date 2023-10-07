@@ -29,6 +29,7 @@ requirements:
     - click-default-group
     - networkx >=2.4
     - optree >=0.9
+    - packaging
     - pluggy >=1.0.0
     - python >=3.8
     - rich
