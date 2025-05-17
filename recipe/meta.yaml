@@ -1,7 +1,5 @@
 {% set name = "pytask" %}
 {% set version = "0.5.3" %}
-{% set python_min = "3.9" %}
-
 
 package:
   name: {{ name|lower }}
@@ -26,7 +24,7 @@ requirements:
     - hatch-vcs
   run:
     - attrs >=21.3.0
-    - click
+    - click >=7,!=8.2.0
     - click-default-group
     - networkx >=2.4
     - optree >=0.9
@@ -35,9 +33,11 @@ requirements:
     - python >={{ python_min }}
     - rich
     - sqlalchemy >=2
-    - tomli >=1.0.0
-    - typing_extensions
     - universal_pathlib >=0.2.2
+    - if: match(python, "<3.11")
+      then:
+        - tomli >=1.0.0
+        - typing_extensions
 
 test:
   requires:
@@ -59,7 +59,7 @@ about:
   home: https://github.com/pytask-dev/pytask
   license: MIT
   license_file: LICENSE
-  summary: pytask is a workflow management system which facilitates reproducible data analyses.
+  summary: pytask is a workflow management system that facilitates reproducible data analyses.
   doc_url: https://pytask-dev.readthedocs.io/en/stable
   dev_url: https://github.com/pytask-dev/pytask/
 
