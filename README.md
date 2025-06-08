@@ -7,7 +7,7 @@ Home: https://github.com/pytask-dev/pytask
 
 Package license: MIT
 
-Summary: pytask is a workflow management system which facilitates reproducible data analyses.
+Summary: pytask is a workflow management system that facilitates reproducible data analyses.
 
 Development: https://github.com/pytask-dev/pytask/
 
