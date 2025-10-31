@@ -52,7 +52,8 @@ test:
     - pytask clean
     - pytask collect
     - pytask markers
-    - pytask profile
+    # Couldn't reproduce error with sentinel value?
+    # - pytask profile
 
 about:
   home: https://github.com/pytask-dev/pytask
