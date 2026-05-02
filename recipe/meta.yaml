@@ -33,7 +33,7 @@ requirements:
     - rich >=13.8.0
     - sqlalchemy >=2.0.31
     - tomli >=1.0.0
-    - tomli_w
+    - tomli-w
     - typing-extensions >=4.8.0
     - universal_pathlib >=0.2.2
 
