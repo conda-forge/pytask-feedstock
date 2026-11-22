@@ -1,13 +1,13 @@
 {% set name = "pytask" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
-  sha256: c7c9f0f68e95646fade14bada5ef89cc8a48abf47fe5d47ab9b671d06abe8f93
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pytask-{{ version }}.tar.gz
+  sha256: 4a9cf5452d8b50d92a3d429d9eb815688e89e21fb83de19012c90c7f019b661a
 
 build:
   noarch: python
